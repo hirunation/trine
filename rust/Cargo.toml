@@ -1,0 +1,9 @@
+[package]
+name = "trine"
+version = "1.0.1"
+edition = "2021"
+description = "Ternary embedding library — Rust FFI bindings for libtrine"
+license = "MIT"
+
+[build-dependencies]
+cc = "1"

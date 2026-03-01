@@ -1,0 +1,23 @@
+# ── Build artifacts ──────────────────────────────────────────────────
+build/
+*.o
+*.a
+
+# ── Index / embedding data ──────────────────────────────────────────
+*.tridx
+*.trrt
+*.snap
+*.trine
+
+# ── Benchmark corpora (large, not needed in image) ──────────────────
+benchmarks/data/
+benchmarks/prepared/
+*.tar.gz
+
+# ── Language binding build artifacts ────────────────────────────────
+rust/target/
+python/__pycache__/
+python/*.egg-info/
+
+# ── Version control ─────────────────────────────────────────────────
+.git

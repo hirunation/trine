@@ -1,0 +1,15 @@
+include pytrine/*.py
+include pytrine/libtrine.so
+include pytrine/libtrine.dylib
+include pytrine/trine.dll
+
+# C sources and headers from parent directory (for source distribution)
+include ../trine_encode.c
+include ../trine_encode.h
+include ../trine_idf.h
+include ../trine_stage1.c
+include ../trine_stage1.h
+include ../trine_route.c
+include ../trine_route.h
+include ../trine_canon.c
+include ../trine_canon.h

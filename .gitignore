@@ -1,0 +1,38 @@
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+
+# Rust build cache
+rust/target/
+
+# Python build artifacts
+python/pytrine/libtrine.so
+python/pytrine/libtrine.dylib
+python/pytrine/trine.dll
+python/dist/
+python/build/
+python/*.egg-info
+python/pytrine/__pycache__/
+python/tests/__pycache__/
+__pycache__/
+*.pyc
+
+# TrineDB binary
+trinedb/trinedb
+
+# Index files
+*.tridx
+*.trrt
+*.trs1
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
