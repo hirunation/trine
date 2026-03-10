@@ -1,0 +1,70 @@
+{
+  "description": "TRINE v1.0.1 Stage-1 baseline metrics on all semantic datasets",
+  "lens": "uniform",
+  "threshold": 0.60,
+  "date": "2026-03-01",
+  "datasets": {
+    "sts": {
+      "pairs": 7249,
+      "spearman_rho": 0.4737,
+      "f1": 0.6220,
+      "precision": 0.6956,
+      "recall": 0.5625,
+      "notes": "STS-B train+dev only (GLUE test has no labels)"
+    },
+    "sick": {
+      "pairs": 9840,
+      "spearman_rho": 0.5339,
+      "f1": 0.6710,
+      "precision": 0.6472,
+      "recall": 0.6966,
+      "notes": "Best sentence-level rho — compositional pairs share surface structure"
+    },
+    "mrpc": {
+      "pairs": 5735,
+      "spearman_rho": 0.3723,
+      "f1": 0.7342,
+      "precision": 0.7347,
+      "recall": 0.7336,
+      "notes": "Surface-form overlap correlates well with paraphrase for news text"
+    },
+    "qqp": {
+      "pairs": 50000,
+      "spearman_rho": 0.3735,
+      "f1": 0.5923,
+      "precision": 0.6416,
+      "recall": 0.5500,
+      "notes": "50K balanced subset. Questions often share surface words."
+    },
+    "snli": {
+      "pairs": 100000,
+      "spearman_rho": 0.1221,
+      "f1": 0.2426,
+      "precision": 0.4130,
+      "recall": 0.1717,
+      "notes": "100K balanced subset. Inference ≠ surface similarity — expected low baseline."
+    },
+    "simlex": {
+      "pairs": 999,
+      "spearman_rho": 0.0665,
+      "f1": 0.0000,
+      "precision": 0.0000,
+      "recall": 0.0000,
+      "notes": "Word pairs only — character n-grams see no shared surface structure."
+    },
+    "wordsim": {
+      "pairs": 352,
+      "spearman_rho": 0.0207,
+      "f1": 0.0102,
+      "precision": 1.0000,
+      "recall": 0.0051,
+      "notes": "Word pairs only — same as SimLex, near-zero baseline expected."
+    }
+  },
+  "summary": {
+    "sentence_level_mean_rho": 0.3551,
+    "word_level_mean_rho": 0.0436,
+    "overall_mean_rho": 0.2375,
+    "interpretation": "Stage-1 captures surface-form overlap. Sentence-level tasks where paraphrases share words show moderate correlation. Word-level tasks and inference tasks show near-zero — this is the gap Stage-2 must close."
+  }
+}

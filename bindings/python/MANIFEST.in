@@ -1,0 +1,19 @@
+include pytrine/*.py
+include pytrine/libtrine.so
+include pytrine/libtrine.dylib
+include pytrine/trine.dll
+
+# C sources and headers from src/ directory (for source distribution)
+include ../../src/encode/trine_encode.c
+include ../../src/encode/trine_encode.h
+include ../../src/encode/trine_idf.h
+include ../../src/compare/trine_stage1.c
+include ../../src/compare/trine_stage1.h
+include ../../src/compare/trine_csidf.c
+include ../../src/compare/trine_csidf.h
+include ../../src/index/trine_route.c
+include ../../src/index/trine_route.h
+include ../../src/index/trine_field.c
+include ../../src/index/trine_field.h
+include ../../src/canon/trine_canon.c
+include ../../src/canon/trine_canon.h

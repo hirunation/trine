@@ -2,37 +2,17 @@
 build/
 *.o
 *.a
-*.so
-*.dylib
-*.dll
 
-# Rust build cache
-rust/target/
+# Raw downloaded datasets (large, reproducible via fetch scripts)
+data/raw/
 
-# Python build artifacts
-python/pytrine/libtrine.so
-python/pytrine/libtrine.dylib
-python/pytrine/trine.dll
-python/dist/
-python/build/
-python/*.egg-info
-python/pytrine/__pycache__/
-python/tests/__pycache__/
-__pycache__/
-*.pyc
+# Prepared JSONL (reproducible via prepare scripts)
+data/prepared/
 
-# TrineDB binary
-trinedb/trinedb
+# Splits (reproducible via split_data.py)
+data/splits/
 
-# Index files
-*.tridx
-*.trrt
-*.trs1
-
-# Editor / OS
+# OS files
 .DS_Store
 *.swp
-*.swo
 *~
-.vscode/
-.idea/

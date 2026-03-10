@@ -13,9 +13,10 @@
  *   EDIT     {1.0, 0.3, 0.1, 0.0}  -- Character-level focus (typo detection)
  *   CODE     {1.0, 0.8, 0.4, 0.2}  -- Structural + character (identifiers)
  *
- * Build:
- *   cc -O2 -Wall -Wextra -o basic_embed basic_embed.c \
- *      ../trine_encode.c ../trine_stage1.c -I.. -lm
+ * Build (from project root):
+ *   cc -O2 -Wall -Wextra -o basic_embed examples/basic_embed.c \
+ *      src/encode/trine_encode.c src/compare/trine_stage1.c \
+ *      -Isrc/encode -Isrc/compare -lm
  *
  * ===================================================================== */
 

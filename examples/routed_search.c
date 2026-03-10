@@ -13,9 +13,11 @@
  * reducing the number of full cosine comparisons from O(N) to a
  * much smaller candidate set.
  *
- * Build:
- *   cc -O2 -Wall -Wextra -o routed_search routed_search.c \
- *      ../trine_encode.c ../trine_stage1.c ../trine_route.c -I.. -lm
+ * Build (from project root):
+ *   cc -O2 -Wall -Wextra -o routed_search examples/routed_search.c \
+ *      src/encode/trine_encode.c src/compare/trine_stage1.c \
+ *      src/index/trine_route.c \
+ *      -Isrc/encode -Isrc/compare -Isrc/index -lm
  *
  * ===================================================================== */
 

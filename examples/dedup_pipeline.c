@@ -18,9 +18,10 @@
  *   3. If the match exceeds the threshold, flag as duplicate
  *   4. Otherwise, add to the index as a new unique entry
  *
- * Build:
- *   cc -O2 -Wall -Wextra -o dedup_pipeline dedup_pipeline.c \
- *      ../trine_encode.c ../trine_stage1.c -I.. -lm
+ * Build (from project root):
+ *   cc -O2 -Wall -Wextra -o dedup_pipeline examples/dedup_pipeline.c \
+ *      src/encode/trine_encode.c src/compare/trine_stage1.c \
+ *      -Isrc/encode -Isrc/compare -lm
  *
  * ===================================================================== */
 
